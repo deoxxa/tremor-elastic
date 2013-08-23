@@ -22,7 +22,11 @@ tremor.on("following", function(o) {
 tremor.on("data", function(o) {
   request({method: "POST", uri: elasticSearch, json: o}, function(err, res, data) {
     if (err) {
-      log.warn("couldn't submit entry", {err: err});
+      return log.warn("couldn't submit entry", {err: err});
+    }
+
+    if (res.statusCode !== 201) {
+      return log.warn("invalid response from elasticsearch", {code: res.statusCode, data: data});
     }
   });
 });
