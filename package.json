@@ -1,0 +1,32 @@
+{
+  "name": "tremor-elastic",
+  "version": "0.0.0",
+  "description": "Use tremor to shove leg-format logs into ElasticSearch",
+  "main": "index.js",
+  "dependencies": {
+    "tremor": "~0.0.1",
+    "request": "~2.10.0"
+  },
+  "bin": {
+    "tremor-elastic": "./tremor-elastic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deoxxa/tremor-elastic.git"
+  },
+  "keywords": [
+    "tremor",
+    "log",
+    "follow",
+    "elasticsearch",
+    "search",
+    "elastic",
+    "leg",
+    "json"
+  ],
+  "author": "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/deoxxa/tremor-elastic/issues"
+  }
+}
