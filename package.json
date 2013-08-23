@@ -1,6 +1,6 @@
 {
   "name": "tremor-elastic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use tremor to shove leg-format logs into ElasticSearch",
   "main": "index.js",
   "dependencies": {
