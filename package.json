@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "tremor": "~0.0.1",
-    "request": "~2.10.0"
+    "request": "~2.10.0",
+    "leg": "~1.0.0"
   },
   "bin": {
     "tremor-elastic": "./tremor-elastic"
